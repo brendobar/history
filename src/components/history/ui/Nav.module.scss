@@ -1,0 +1,52 @@
+
+.circleNavContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.circleNavFraction{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 130%;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.circleNav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  z-index: 1;
+}
+.circleNavBtn{
+  border: none;
+  background: none;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.circleNavBtn svg{
+  max-width: 100%;
+  max-height: 100%;
+}
+.circleNavBtn:disabled{
+  opacity: 0.5;
+}
+
+
+
+@media screen and (max-width: 767px){
+  .circleNavContainer{
+    gap: 10px;
+  }
+  .circleNav{
+    gap: 8px;
+  }
+  .circleNavBtn{
+    width: 24px;
+    height: 24px;
+  }
+
+}
